@@ -1,2 +1,4 @@
+
 def prime_factors(number):
-    pass
+    factors = []
+    return factors
