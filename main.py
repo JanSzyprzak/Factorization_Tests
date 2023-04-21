@@ -1,6 +1,7 @@
 
 def prime_factors(number):
     factors = []
-    factors.append(number)
+    if number > 1:
+        factors.append(number)
 
     return factors
