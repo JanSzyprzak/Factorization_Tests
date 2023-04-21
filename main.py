@@ -1,7 +1,14 @@
 
 def prime_factors(number):
     factors = []
-    if number > 1:
-        factors.append(number)
+    divisor = 2
+
+    while divisor <= number:
+        if number % divisor == 0:
+            factors.append(divisor)
+            number = number // divisor
+        else:
+            divisor += 1
 
     return factors
+
