@@ -16,3 +16,10 @@ def test_p_f_2():
 
 def test_if_number_is_gt_than_1():
     assert prime_factors(1) == [], "Number must be greater than 1"
+
+def test_if_p_f_returns_all_factors_list():
+    number = 124
+    factors = [2,2,31]
+    
+    assert prime_factors(number) == factors, "Something went wrong"
+
